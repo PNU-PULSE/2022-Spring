@@ -70,10 +70,8 @@ struct Segment {
         }
         Init(node * 2, start, (start + end) / 2);
         Init(node * 2 + 1, (start + end) / 2 + 1, end);
-        sub_arr[node].reserve(sub_arr[node * 2].size() + sub_arr[node * 2 + 1].size());
-        sub_arr[node] = sub_arr[node * 2];
-        sub_arr[node].insert(sub_arr[node].end(), sub_arr[node * 2 + 1].begin(), sub_arr[node * 2 + 1].end());
-        sort(sub_arr[node].begin(), sub_arr[node].end());
+        sub_arr[node].resize(sub_arr[node * 2].size() + sub_arr[node * 2 + 1].size());
+        merge(sub_arr[node * 2].begin(), sub_arr[node * 2].end(), sub_arr[node * 2 + 1].begin(), sub_arr[node * 2 + 1].end(), sub_arr[node].begin());
     }
 
     // arr[left...right] 중 mid 이하의 수 갯수
