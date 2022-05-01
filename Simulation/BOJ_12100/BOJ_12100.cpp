@@ -9,7 +9,7 @@ void move_graph(int direction)
 {
 	queue<int> q;
 
-	// ¿ÞÂÊ
+	// Â¿ÃžÃ‚ÃŠ
 	if (direction == 0)
 	{
 		for (int i = 0; i < n; i++)
@@ -43,7 +43,7 @@ void move_graph(int direction)
 			}
 		}
 	}
-	// ¿À¸¥ÂÊ
+	// Â¿Ã€Â¸Â¥Ã‚ÃŠ
 	else if (direction == 1)
 	{
 		for (int i = 0; i < n; i++)
@@ -77,7 +77,7 @@ void move_graph(int direction)
 			}
 		}
 	}
-	// À§ÂÊ
+	// Ã€Â§Ã‚ÃŠ
 	else if (direction == 2)
 	{
 		for (int i = 0; i < n; i++)
@@ -111,7 +111,7 @@ void move_graph(int direction)
 			}
 		}
 	}
-	// ¾Æ·¡ÂÊ
+	// Â¾Ã†Â·Â¡Ã‚ÃŠ
 	else if (direction == 3)
 	{
 		for (int i = 0; i < n; i++)
