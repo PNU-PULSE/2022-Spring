@@ -5,6 +5,7 @@ using namespace std;
 
 void fastio();
 void input();
+void bfs();
 void solution();
 void output();
 
@@ -29,7 +30,7 @@ void input(){
     }
 }
 
-void dfs(int pos){
+void bfs(int pos){
     queue<pair<int ,int>> q;
     R[0][0] = pos;
     q.push({0, 0});
@@ -49,7 +50,7 @@ void dfs(int pos){
 
 void solution(){
     for(int k = 1; k <= maxVal; k++){
-        dfs(k);
+        bfs(k);
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= m; j++){
                 if(R[i][j] < k){
