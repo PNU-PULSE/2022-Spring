@@ -29,13 +29,11 @@ public:
     }
     
     bool all() {
-        if(siz == COUNT) return true;
-        else return false;
+        return siz == COUNT;
     }
     
     bool one() {
-        if(COUNT>0) return true;
-        return false;
+        return COUNT>0;
     }
     
     int count() {
